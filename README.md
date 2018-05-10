@@ -1,8 +1,12 @@
 
-### sandbox_ping_pong_java_rmi_modern_config
+### ping_pong_java_rmi_mixed_mode
 
-* Example of co-dependent services in Java RMI.
-* Uses Spring's Java configuration (not XML).
+* Example of co-dependent services in Java RMI
+* PingService uses vanilla Java RMI
+* PongService uses Spring Java RMI with Java configuration
+* details are shielded by PingServiceClient and PongServiceModernClient
+* Registry and Monitor use the above clients
+    * note that Monitor predicates on the `pongServiceEndpoint` registry entry
 
 ### Notes
 
