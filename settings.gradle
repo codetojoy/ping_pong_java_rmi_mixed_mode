@@ -1,0 +1,4 @@
+include 'common', 
+        'PingService', 'PongService', 
+        'PingServiceClient', 'PongServiceModernClient',
+        'client', 'Registry', 'Monitor'
